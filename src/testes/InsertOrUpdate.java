@@ -1644,7 +1644,6 @@ public class InsertOrUpdate {
                                     updateVitima += ", membro_inf_direito=\'" + lesao.replaceAll("['<>\\|/]", " ") + "\' where ras_id=" + id_ras + " and numerovitima=" + countVitima + " returning id";
                                     Insert_vitimaRAS += "\'" + lesao.replaceAll("['<>\\|/]", " ") + "\') returning id";
                                     
-                                    System.out.println(updateVitima);
                                     ResultSet rsUpdate = null;
                                     rsUpdate = Atualiza.Consulta_sigetrans(updateVitima);
                                     Long id_vitimaRAS=null;

@@ -90,7 +90,7 @@ public class GeoCoderGoogle {
 
     private static Endereco processQuery(URL url) {
         //Efetua a consulta através de uma solicitação http
-        configureProxy("proxy.unioeste.br", "8080");
+//        configureProxy("proxy.unioeste.br", "8080");
         System.out.println("Mandando a url " + url.toString());
         try {
             Endereco end = new Endereco();
