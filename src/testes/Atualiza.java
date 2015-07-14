@@ -37,7 +37,7 @@ public class Atualiza {
         try {
             Thread.sleep(20);
             Class.forName("com.mysql.jdbc.Driver");
-            Conexao = DriverManager.getConnection("jdbc:mysql://201.41.143.66:6304/sysbmccb", "SIGETRANS", "cotrans193#");
+            Conexao = DriverManager.getConnection("jdbc:mysql://187.49.85.50:6304/sysbmccb", "SIGETRANS", "cotrans193#");
             Conexao.setAutoCommit(false);
             Comando = Conexao.createStatement();
             return true;
